@@ -12,19 +12,19 @@ function Projects() {
       <section>
         <ProjectItem
           img="https://i.imgur.com/JTJaCAV.png"
-          title="Projeto 01"
+          title="Project 01"
           type="Website"
           slug="teste"
         />
         <ProjectItem
           img="https://i.imgur.com/JTJaCAV.png"
-          title="Projeto 01"
+          title="Project 02"
           type="Website"
           slug="teste"
         />
         <ProjectItem
           img="https://i.imgur.com/JTJaCAV.png"
-          title="Projeto 01"
+          title="Project 03"
           type="Website"
           slug="teste"
         />
