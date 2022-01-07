@@ -4,7 +4,7 @@ export default function Form() {
   return (
     <FormContainer>
       <Input
-        placeholder="Nome"
+        placeholder="Name"
         required
       />
       <Input
@@ -13,7 +13,7 @@ export default function Form() {
         required
       />
       <TextArea
-        placeholder="Mensagem"
+        placeholder="Message"
         required
       />
       <button disabled type="submit">SEND</button>
