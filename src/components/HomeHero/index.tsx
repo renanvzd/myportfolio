@@ -27,12 +27,15 @@ function HomeHero() {
             {'\u007D'}
           </CodeItem>
           <CodeItem>
-            <span className="purple">About me</span> {'\u007B'}
+            <span className="purple">AboutMe</span> {'\u007B'}
             <div>
               Role: <span className="blue">Dev Front-end,</span>
             </div>
             <div>
-              Current City: <span className="blue">Cork, Ireland</span>
+              Current_City: <span className="blue">Cork</span>
+            </div>
+            <div>
+              Country: <span className="blue">Ireland</span>
             </div>
             {'\u007D'}
           </CodeItem>
