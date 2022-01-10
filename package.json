@@ -10,7 +10,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "axios": "^0.24.0",
-    "googleapis": "^92.0.0",
+    "googleapis": "85.0.0",
     "next": "10.2.0",
     "next-images": "^1.7.0",
     "nextjs-progressbar": "^0.0.13",
@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "@types/node": "^15.3.0",
-    "@types/nodemailer": "^6.4.4",
     "@types/react": "^17.0.5",
     "@types/styled-components": "^5.1.9",
     "@typescript-eslint/eslint-plugin": "^4.23.0",
