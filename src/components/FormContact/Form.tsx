@@ -15,7 +15,7 @@ export default function Form() {
     event.preventDefault();
 
     if (!name || !email || !message) {
-      toast('Preencha todos os campos para enviar sua mensagem!', {
+      toast('Please make sure all fields are filled in correctly!', {
         style: {
           background: theme.error,
           color: '#fff'
@@ -31,7 +31,7 @@ export default function Form() {
       setEmail('');
       setMessage('');
 
-      toast('Mensagem enviada com sucesso!', {
+      toast('Message sent!', {
         style: {
           background: theme.secondary,
           color: '#fff'
@@ -63,12 +63,12 @@ export default function Form() {
         onChange={({ target }) => setEmail(target.value)}
       />
       <TextArea
-        placeholder="Mensagem"
+        placeholder="Message"
         value={message}
         onChange={({ target }) => setMessage(target.value)}
       />
       <button type="submit" disabled={loading}>
-        ENVIAR
+        SEND
       </button>
     </FormContainer>
   );
