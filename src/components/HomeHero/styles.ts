@@ -34,6 +34,7 @@ export const Container = styled.section`
   }
 
   @media (max-width: 700px) {
+    margin-top: 1rem;
     flex-direction: column-reverse;
     > div {
       width: 100%;

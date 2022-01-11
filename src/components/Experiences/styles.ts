@@ -19,6 +19,7 @@ export const Container = styled.section`
     @media (max-width: 700px) {
       flex-direction: column;
       margin-top: 5rem;
+      padding-bottom: 5rem;
       gap: 2rem;
     }
   }

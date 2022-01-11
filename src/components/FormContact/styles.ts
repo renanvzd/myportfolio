@@ -31,7 +31,7 @@ export const FormContainer = styled.form`
   }
 
   @media (max-width: 700px) {
-    margin-top: 5rem;
+    margin-top: 3rem;
     grid-template-columns: 1fr;
   }
 
