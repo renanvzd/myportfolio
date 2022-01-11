@@ -6,7 +6,7 @@ import Header from '../../../components/Header';
 import { getPrismicClient } from '../../../services/prismic';
 import { ProjectContainer } from '../../../styles/ProjectContainerStyles';
 
-interface IProjeto {
+interface IProject {
   slug: string;
   title: string;
   type: string;
@@ -16,7 +16,7 @@ interface IProjeto {
 }
 
 interface ProjectProps {
-  project: IProjeto;
+  project: IProject;
 }
 
 export default function Projeto({ project }: ProjectProps) {
