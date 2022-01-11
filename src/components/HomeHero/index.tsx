@@ -32,7 +32,7 @@ function HomeHero() {
               Role: <span className="blue">Dev Front-end,</span>
             </div>
             <div>
-              Current_City: <span className="blue">Cork</span>
+              Current_City: <span className="blue">Cork,</span>
             </div>
             <div>
               Country: <span className="blue">Ireland</span>
