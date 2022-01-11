@@ -1,10 +1,12 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Prismic from '@prismicio/client';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 import BannerProject from '../../../components/BannerProject';
 import Header from '../../../components/Header';
 import { getPrismicClient } from '../../../services/prismic';
 import { ProjectContainer } from '../../../styles/ProjectContainerStyles';
+import LoadingScreen from '../../../components/LoadingScreen';
 
 interface IProject {
   slug: string;
@@ -20,22 +22,20 @@ interface ProjectProps {
 }
 
 export default function Projeto({ project }: ProjectProps) {
+  const router = useRouter();
+  if (router.isFallback) {
+    return <LoadingScreen />;
+  }
   return (
     <ProjectContainer>
       <Head>
         <title>{project.title} | Meu portfólio</title>
-        <meta
-          name="description"
-          content="I'm a front-end developer living in Cork and here I present some projects developed by me!"
-        />
-        <meta property="og:image" content="/ogimage.png" />
-        <meta property="og:image:secure_url" content="/ogimage.png" />
-        <meta name="twitter:image" content="/ogimage.png" />
-        <meta name="twitter:image:src" content="/ogimage.png" />
-        <meta
-          property="og:description"
-          content="I'm a front-end developer living in Cork and here I present some projects developed by me!"
-        />
+        <meta name="description" content={project.description} />
+        <meta property="og:image" content={project.thumbnail} />
+        <meta property="og:image:secure_url" content={project.thumbnail} />
+        <meta name="twitter:image" content={project.thumbnail} />
+        <meta name="twitter:image:src" content={project.thumbnail} />
+        <meta property="og:description" content={project.description} />
       </Head>
 
       <Header />
