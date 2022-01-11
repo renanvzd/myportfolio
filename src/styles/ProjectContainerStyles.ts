@@ -8,7 +8,7 @@ export const ProjectContainer = styled.div`
   height: 100%;
 
   > main {
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-bottom: 2rem;
     width: 100%;
     padding: 0 5rem;
@@ -21,15 +21,15 @@ export const ProjectContainer = styled.div`
     }
 
     button {
-      background: ${({ theme }) => theme.primary};
+      background: ${({ theme }) => theme.button};
       padding: 0.8rem 3rem;
       border-radius: 0.5rem;
       border: none;
       transition: 0.5s;
-      margin-top: 2rem;
+      margin-top: 6rem;
 
       &:hover {
-        background: ${({ theme }) => darken(0.05, theme.primary)};
+        background: ${({ theme }) => darken(0.1, theme.button)};
       }
 
       a {

@@ -24,21 +24,21 @@ export const Container = styled.section`
   }
 
   > button {
-    background: ${({ theme }) => theme.primary};
+    background: ${({ theme }) => theme.button};
     padding: 0.8rem 3rem;
     border-radius: 0.5rem;
     border: none;
     transition: 0.5s;
 
     &:hover {
-      background: ${({ theme }) => darken(0.05, theme.primary)};
+      background: ${({ theme }) => darken(0.05, theme.button)};
     }
 
     a {
       text-transform: uppercase;
       color: #fff;
       font-size: 1.5rem;
-      font-weight: 300;
+      font-weight: 400;
     }
 
     @media (max-width: 500px) {

@@ -60,7 +60,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const projectResponse = await prismic.query(
     [Prismic.Predicates.at('document.type', 'project')],
-    { orderings: '[document.first_publication_date desc]' }
+    { orderings: '[document.first_publication_date]' }
   );
 
   const projects = projectResponse.results.map(project => ({

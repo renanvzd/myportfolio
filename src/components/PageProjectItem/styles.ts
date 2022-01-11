@@ -33,7 +33,7 @@ export const Container = styled.div<ContainerProps>`
       z-index: 2;
       h1 {
         color: ${({ theme }) => theme.primary};
-        font-size: 1.5rem;
+        font-size: 1.25rem;
       }
       h2 {
         color: ${({ theme }) => theme.secondary};

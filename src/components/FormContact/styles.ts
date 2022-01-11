@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Container = styled.section``;
 
 export const FormContainer = styled.form`
-  margin-top: 8rem;
+  margin-top: 5rem;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -14,10 +14,10 @@ export const FormContainer = styled.form`
     border: none;
     padding: 1rem 2.5rem;
     color: #fff;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.2rem;
     border-radius: 0.5rem;
-    background: ${({ theme }) => theme.primary};
+    background: ${({ theme }) => theme.button};
     transition: 0.5s;
     width: fit-content;
 
@@ -26,7 +26,7 @@ export const FormContainer = styled.form`
     }
 
     &:not(:disabled):hover {
-      background: ${({ theme }) => darken(0.05, theme.primary)};
+      background: ${({ theme }) => darken(0.05, theme.button)};
     }
   }
 

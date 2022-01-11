@@ -48,7 +48,7 @@ export default function Projeto({ project }: ProjectProps) {
       <main>
         <p>{project.description}</p>
         <button type="button">
-          <a href={project.link}>Know the project</a>
+          <a href={project.link}>Go to website</a>
         </button>
       </main>
     </ProjectContainer>
