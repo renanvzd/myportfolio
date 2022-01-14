@@ -26,7 +26,7 @@ function Experiencias() {
         <ExperienceItem
           year="2013 to 2021"
           title="Product Owner"
-          description="I worked as a product owner at a brazilian bank (Banrisul) that has 4.3 million customers"
+          description="I worked as a product owner at a brazilian bank (Banrisul) that has 4.3 million customers."
         />
       </section>
     </Container>
