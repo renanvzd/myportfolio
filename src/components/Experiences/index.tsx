@@ -10,8 +10,8 @@ function Experiencias() {
       <section>
         <ExperienceItem
           year="2010 to 2014"
-          title="Bachelor Degree in Business Administration"
-          description="I believe developers also need to understand business. So, this degree helps me to think about the business problem."
+          title="Business - Bachelor Degree"
+          description="I believe developers also need to understand business rules. So, this degree give me a background to have a macroperspective view of the business."
         />
         <ExperienceItem
           year="2013 to 2021"
@@ -20,13 +20,13 @@ function Experiencias() {
         />
         <ExperienceItem
           year="2018 to 2020"
-          title="Systems for Internet degree"
-          description="This degree allowed me to build and develop basic and fundamental skills."
+          title="Internet Systems - Associate Degree"
+          description="This degree allowed me to build and develop solid and fundamental skills."
         />
         <ExperienceItem
           year="2020 to nowadays"
           title="Works and Projects"
-          description="You can check out the projects I've been working right here on this website"
+          description="You can check out the projects I've been working here on this website"
         />
       </section>
     </Container>
