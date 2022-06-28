@@ -10,7 +10,7 @@ export const Container = styled.section`
 
   > img {
     width: 40rem;
-    flex: 1;
+    flex: 2;
   }
 
   > div {
