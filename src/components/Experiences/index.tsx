@@ -26,7 +26,7 @@ function Experiencias() {
         <ExperienceItem
           year="2020 to nowadays"
           title="Works and Projects"
-          description="I have been using the languages and technologies most used by companies. Visit my portfolio and check my skills for yourself."
+          description="I have been using the languages and technologies most used by companies. See my portfolio below and check my skills for yourself."
         />
       </section>
     </Container>
