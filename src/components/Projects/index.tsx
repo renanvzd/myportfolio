@@ -41,4 +41,5 @@ function Projects({ projects }: ProjetosProps) {
   );
 }
 
+
 export default Projects;
