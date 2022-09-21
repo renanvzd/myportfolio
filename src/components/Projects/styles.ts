@@ -159,6 +159,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
       width: 100%;
 
       > div.text {
+        width: 90%;
         left: 1rem;
         top: 1rem;
       }
@@ -199,11 +200,19 @@ export const ProjectContainer = styled.div<ProjectProps>`
     }
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 750px) {
     height: 17rem;
+
+    h1 {
+        font-size: 1.2rem;
+      }
+
+    > section > div.text {
+      width: 90%;
+    }
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     > button {
       height: auto;
 
@@ -214,8 +223,9 @@ export const ProjectContainer = styled.div<ProjectProps>`
     }
 
     > section > div.text {
+      width: 90%;
       h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
       h2 {
         font-size: 1rem;
