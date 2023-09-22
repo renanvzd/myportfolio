@@ -1,35 +1,27 @@
-import { useState } from 'react';
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import toast from 'react-hot-toast';
-import { sendContactMail } from '../../services/sendMail';
 import theme from '../../styles/theme';
 import { FormContainer, Input, TextArea } from './styles';
 
 export default function Form() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
   const [loading, setLoading] = useState(false);
 
-  async function handleSubmit(event) {
-    event.preventDefault();
+  const serviceEmailjs = process.env.NEXT_PUBLIC_SERVICE_EMAIL_JS;
+  const templateEmailjs = process.env.NEXT_PUBLIC_TEMPLATE_EMAIL_JS;
+  const userEmailjs = process.env.NEXT_PUBLIC_USER_EMAIL_JS;
 
-    if (!name || !email || !message) {
-      toast('Please make sure all fields are filled in correctly!', {
-        style: {
-          background: theme.error,
-          color: '#fff'
-        }
-      });
-      return;
-    }
+  async function sendEmail(e) {
+    e.preventDefault();
 
     try {
       setLoading(true);
-      await sendContactMail(name, email, message);
-      setName('');
-      setEmail('');
-      setMessage('');
+      await emailjs.sendForm(
+        serviceEmailjs,
+        templateEmailjs,
+        e.target,
+        userEmailjs
+      );
 
       toast('Message sent!', {
         style: {
@@ -37,6 +29,8 @@ export default function Form() {
           color: '#fff'
         }
       });
+
+      e.target.reset();
     } catch (error) {
       toast('Ocorreu um erro ao tentar enviar sua mensagem. Tente novamente!', {
         style: {
@@ -50,22 +44,19 @@ export default function Form() {
   }
 
   return (
-    <FormContainer data-aos="fade-up" onSubmit={handleSubmit}>
+    <FormContainer data-aos="fade-up" onSubmit={sendEmail}>
       <Input
         placeholder="Name"
-        value={name}
-        onChange={({ target }) => setName(target.value)}
+        name="name"
       />
       <Input
         placeholder="E-mail"
         type="email"
-        value={email}
-        onChange={({ target }) => setEmail(target.value)}
+        name="email"
       />
       <TextArea
         placeholder="Message"
-        value={message}
-        onChange={({ target }) => setMessage(target.value)}
+        name="message"
       />
       <button type="submit" disabled={loading}>
         SEND
